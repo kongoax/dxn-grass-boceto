@@ -1,0 +1,14 @@
+name: CI-KONG
+
+on:
+  push:
+    branches: ["development"]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Validar Actions"
+        run: echo "Validando funcionalidad"
